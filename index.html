@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Pública para Todos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Importação do Chart.js -->
+</head>
+<body>
+    <header>
+        <h1>Saúde Pública para Todos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">O Problema</a></li>
+                <li><a href="#solucao">A Solução</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section-inicio">
+        <div class="bem-vindo">
+            <h2>Bem-vindo!</h2>
+            <p>Saiba mais sobre os desafios e as soluções para melhorar a saúde pública no Brasil.</p>
+        </div>
+    </section>
+
+    <section id="problema" class="section-problema">
+        <h2>O Problema</h2>
+        <p>A saúde pública no Brasil está em uma situação crítica. O Sistema Único de Saúde (SUS), criado para fornecer acesso universal e gratuito à saúde, enfrenta problemas de superlotação, falta de recursos e de profissionais capacitados. Milhares de brasileiros esperam meses ou até anos por tratamentos essenciais.</p>
+        <p>De acordo com o Ministério da Saúde, mais de 150 mil pessoas aguardam na fila por cirurgias eletivas. Além disso, a desigualdade de acesso à saúde é um problema grave. Regiões mais afastadas, como a Amazônia e o interior nordestino, sofrem com a falta de hospitais, médicos e medicamentos.</p>
+        <p>Em 2023, o Brasil investiu cerca de 9% do seu PIB em saúde, mas ainda assim, a qualidade dos serviços não atinge a população de forma equitativa, com muitos municípios dependendo de convênios e programas emergenciais.</p>
+        <canvas id="healthChart" width="400" height="200"></canvas> <!-- Gráfico realista -->
+    </section>
+
+    <section id="solucao" class="section-solucao">
+        <h2>A Solução</h2>
+        <p>A solução para melhorar a saúde pública no Brasil passa pela ampliação dos investimentos no SUS, tanto em infraestrutura quanto na qualificação dos profissionais. Além disso, o uso da tecnologia é uma ferramenta poderosa para otimizar o sistema de saúde.</p>
+        <p>A telemedicina, por exemplo, permite que pacientes de áreas remotas tenham acesso a médicos especialistas sem precisar se deslocar por grandes distâncias. Outro ponto é a digitalização dos prontuários médicos, o que facilita o acompanhamento de tratamentos e a troca de informações entre profissionais da saúde.</p>
+        <p>O fortalecimento de programas preventivos, como vacinação e campanhas de conscientização, também pode reduzir a sobrecarga no sistema. Em 2023, o Brasil vacinou mais de 80% de sua população contra a Covid-19, uma ação que salvou milhões de vidas.</p>
+    </section>
+
+    <section id="contato" class="section-contato">
+        <h2>Entre em Contato</h2>
+        <p>Caso você tenha uma ideia, mande para nós por email! Queremos ouvir suas sugestões para melhorar a saúde pública no Brasil.</p>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="responseMessage"></div> <!-- Div para mostrar mensagens de erro/sucesso -->
+    </section>
+    
+    <footer>
+        <p>© 2024 Saúde Pública para Todos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
